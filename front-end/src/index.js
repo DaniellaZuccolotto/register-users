@@ -1,14 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import './styles/main.css';
+import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Create a root container React 18 https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
+const container = document.getElementById('root');
+const root = createRoot(container);
+
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
+  </BrowserRouter>,
 );
 
 // If you want to start measuring performance in your app, pass a function
