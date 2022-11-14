@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const getUsers = async () => {
   try {
-    const URL = 'http://localhost:3001/users';
+    const URL = 'https://register-users-production.up.railway.app/';
     const response = await axios.get(URL);
     return response.data;
   } catch (error) {
