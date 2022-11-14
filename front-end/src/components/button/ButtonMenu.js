@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import menu from '../../images/menu.png';
+import back from '../../images/back.png';
 import { img } from '../../styles/formPageStyle';
 
 function ButtonMenu() {
@@ -9,7 +9,7 @@ function ButtonMenu() {
   return (
     <img
     className={ img }
-    src={ menu } 
+    src={ back } 
     alt="logo"
     onClick={ () => history('/') }
   /> 

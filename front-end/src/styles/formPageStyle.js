@@ -16,6 +16,6 @@ export const input = "bg-inherit rounded-md text-center w-72 h-8 border-[1px] bo
 
 export const inputSubmit = "bg-[#fcad45] hover:bg-[#bd7d29] text-black w-28 mt-4 rounded";
 
-export const img = "w-8 h-8 ml-2 mt-2 cursor-pointer";
+export const img = "bg-white rounded-2xl w-8 h-8 ml-2 mt-2 cursor-pointer";
 
 export const img2 = "w-64 h-64 mb-6";

@@ -9,7 +9,7 @@ function ButtonRemove({ removeUsers }) {
       type="button"
       onClick={ removeUsers } 
     >
-      Excluir
+      Remove user
     </button>
   );
 }
