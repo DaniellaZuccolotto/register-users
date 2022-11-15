@@ -42,11 +42,7 @@ function ListPage() {
         <main>
           <table className={ table }>
             <Thead />
-            {
-              users.map((user, index) => (
-                <UserCard key={ index } user={ user }/>
-              ))
-            }
+            { users? users.map((user) => <UserCard key={ user.id } user={ user } />) : <p>Loading...</p> }
           </table>
         </main>
       </div>

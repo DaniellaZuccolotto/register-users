@@ -23,20 +23,13 @@ function UserCard({ user }) {
     <tbody
      className="text-center text-white p-10" 
     >
-      { !user ? <h1>Loading...</h1>
-        : (
-          <tr>
-            <td>
-              <InputSelectCheck selectUser={ selectUser } name={ name } />
-            </td>
-            <td className={ td }>{ name }</td>
-            <td className={ td }>{ age }</td>
-            <td className={ td }>{ email }</td>
-            <td className={ td }>
-              <ButtonDetails user={ user } />
-            </td>
-          </tr>
-        )}
+      <tr>
+        <td><InputSelectCheck selectUser={ selectUser } name={ name } /></td>
+        <td className={ td }>{ name }</td>
+        <td className={ td }>{ age }</td>
+        <td className={ td }>{ email }</td>
+        <td className={ td }><ButtonDetails user={ user } /></td>
+      </tr>
     </tbody>
   );
 }
