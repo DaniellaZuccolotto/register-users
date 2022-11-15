@@ -40,7 +40,7 @@ npm start // para iniciar a aplicação
 |---|---|---|
 | `DELETE` | Remove um usuário | http://localhost:3001/users/:id |
 
-Na requisição POST e PUT, é necessário informar os dados o usuário no formato a seguir:
+Na requisição POST e PUT, é necessário informar os dados do usuário no formato a seguir:
 ```
 {
    “name”: “Nome do usuário”,
